@@ -1,0 +1,172 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490d5
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (26) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Sep  8 2024 01:32:30[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (90) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a9f0h ( 43504) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001aa18 vaddr=3fc92900 size=02a64h ( 10852) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0001d484 vaddr=40374000 size=02b94h ( 11156) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=19094h (102548) map[0m
+[0;32mI (143) esp_image: segment 4: paddr=000390bc vaddr=40376b94 size=0bd54h ( 48468) load[0m
+[0;32mI (160) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (160) boot: Disabling RNG early entropy source...[0m
+[0;32mI (171) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (184) app_init: Project name:     gpio-interrupt-test[0m
+[0;32mI (190) app_init: App version:      a25bb9d-dirty[0m
+[0;32mI (195) app_init: Compile time:     Sep  8 2024 01:32:25[0m
+[0;32mI (201) app_init: ELF file SHA256:  81643a1f5...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (216) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (221) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FC95C30 len 00053AE0 (334 KiB): RAM[0m
+[0;32mI (239) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (245) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (251) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (258) spi_flash: detected chip: gd[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (279) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (286) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (293) main_task: Started on CPU0[0m
+[0;32mI (303) main_task: Calling app_main()[0m
+[0;32mI (303) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (313) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (323) gpio: GPIO[48]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (1333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (1333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (1333) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (1833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (2333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (2333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (2333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (2833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (3333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (3333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (3333) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (3833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (4333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (4333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (4333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (4833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (5333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (5333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (5333) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (5833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (6333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (6333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (6333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (6833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (7333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (7333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (7333) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (7833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (8333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (8333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (8333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (8833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (9333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (9333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (9333) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (9833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (10333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (10333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (10333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (10833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (11333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (11333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (11333) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (11833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (12333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (12333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (12333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (12833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (13333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (13333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (13333) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (13833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (14333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (14333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (14333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (14833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (15333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (15333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (15333) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (15833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (16333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (16333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (16333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (16833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (17333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (17333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (17333) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (17833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (18333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (18333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (18333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (18833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (19333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (19333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (19333) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (19833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (20333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (20333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (20333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (20833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (21333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (21333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (21333) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (21833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (22333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (22333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (22333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (22833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (23333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (23333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (23333) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (23833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (24333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (24333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (24333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (24833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (25333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (25333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (25333) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (25833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (26333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (26333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (26333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (26833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (27333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (27333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (27333) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (27833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m
+[0;32mI (28333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (28333) GPIO Interrupt: GPIO[4] intr, val: 1[0m
+[0;32mI (28333) GPIO Interrupt: toggle_gpio: gpio level = 1[0m
+[0;32mI (28833) GPIO Interrupt: toggle_gpio: gpio level = 0[0m

@@ -13,5 +13,9 @@
     ],
     "idf.portWin": "COM5",
     "idf.pythonBinPathWin": "C:\\.espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe",
-    "idf.toolsPathWin": "C:\\.espressif"
+    "idf.toolsPathWin": "C:\\.espressif",
+    "files.associations": {
+        "queue.h": "c",
+        "gpio.h": "c"
+    }
 }
